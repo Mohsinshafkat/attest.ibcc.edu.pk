@@ -1,207 +1,414 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Receipt</title>
+
 <style>
+
 @font-face {
+
 font-family: 'gardenia-book';
+
 src: url('gardenia-book.ttf') format('truetype');
+
 font-weight: normal;
+
 font-style: normal;
+
 }
+
  * {
+
    box-sizing: border-box;
+
    margin: 0;
+
    padding: 0;
+
    font-family: 'gardenia-book', Arial, sans-serif;
+
    }
+
    body {
+
    background: url('bg.png') no-repeat center center fixed;
+
    background-size: cover;
+
    display: flex;
+
    justify-content: center;
+
    align-items: center;
+
    min-height: 100vh;
-   padding: 5%;
+
+   padding: 0%;
+
    }
+
    .receipt-card {
+
    background: #ffffff;
-   width: 320px;
+
+   width: 360px;
+   height: 560px;
+
    position: relative;
-   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+
+   box-shadow: 0 0px 2px rgba(0,0,0,0.2);
+
    margin: 0 auto;
+
    }
+
    .close-icon {
+
    position: absolute;
+
    top: 12px;
+
    right: 15px;
+
    font-size: 16px;
+
    color: #444444;
+
    cursor: pointer;
+
    font-weight: bold;
+
    }
+
    .header-section {
+
    background-color: rgba(248, 248, 248, 0.85);
+
    text-align: center;
+
    padding: 20px 20px 12px;
+
    }
+
    .tick-img {
-   width: 48px;
-   height: 48px;
+
+   width: 30px;
+
+   height: 30px;
+
    border-radius: 50%;
+
    object-fit: cover;
+
    margin: 0 auto 6px;
+
    display: block;
+
    }
+
    .logo-img {
-   max-width: 120px;
+
+   max-width: 130px;
+
    height: auto;
+
    margin: 0 auto 8px;
+
    display: block;
+
    }
+
    .main-title {
+
    color: #01BD5F;
+
    font-size: 24px;
+
    font-weight: 600;
+
    margin-bottom: 2px;
+
    letter-spacing: 0.2px;
+
    }
+
    .sub-title {
+
    color: #999999;
+
    font-size: 12px;
+
    letter-spacing: 0.1px;
+
    }
+
    .body-section {
+
    padding: 14px 24px 6px;
+
    color: #555555;
+
    }
+
    .date-id {
+
    color: #888888;
+
    font-size: 10.5px;
+
    line-height: 1.1;
+
    margin-bottom: 10px;
+
    }
+
    .info-group {
+
    margin-bottom: 7px;
+
    }
+
    .info-label {
+
    color: #6a6a6a;
+
    font-size: 12.5px;
+
    font-weight: 500;
+
    margin-bottom: 1px;
+
    line-height: 1.05;
+
    }
+
    .info-value {
+
    color: #8a8a8a;
+
    font-size: 11px;
-   line-height: 1.1;
+
+   line-height: 1.0;
+
    }
+
    .wallet-icon {
+
    display: inline-block;
+
    width: 12px;
+
    height: 12px;
+
    vertical-align: -1px;
+
    margin-right: 2px;
+
    }
+
    .total-label {
+
    color: #01BD5F;
+
    font-size: 12.5px;
+
    font-weight: 500;
+
    margin-top: 8px;
+
    margin-bottom: 1px;
+
    line-height: 1.05;
+
    }
+
    .total-value {
+
    color: #444444;
+
    font-size: 14px;
+
    font-weight: 600;
+
    letter-spacing: 0.2px;
+
    line-height: 1.1;
+
    }
+
    .footer-section {
+
    display: flex;
+
    justify-content: flex-end;
+
    align-items: flex-end;
+
    gap: 12px;
+
    padding: 6px 20px 14px;
+
    color: #999999;
+
    font-size: 9.5px;
+
    }
+
    .footer-item {
+
    display: flex;
+
    align-items: center;
+
    gap: 2px;
+
    cursor: pointer;
+
    }
+
    .pdf-item {
+
    flex-direction: column;
+
    align-items: center;
+
    gap: 2px;
+
    }
+
    .pdf-icon {
+
    width: 14px;
+
    height: 14px;
+
    }
+
    </style>
+
    </head>
+
    <body>
+
    <div class="receipt-card">
+
    <span class="close-icon">✕</span>
+
    <div class="header-section">
+
    <img src="tick.png" alt="Tick" class="tick-img">
+
    <img src="logo.png" alt="Logo" class="logo-img">
+
    <div class="main-title">Transaction Successful</div>
+
    <div class="sub-title">Money has been sent</div>
+
    </div>
+
    <div class="body-section">
+
    <div class="date-id">
+
    <div>28 July 2026 5:51 PM</div>
+
    <div>ID#628975879754</div>
+
    </div>
+
    <div class="info-group">
+
    <div class="info-label">Funding Source</div>
+
    <div class="info-value">
+
    <svg class="wallet-icon" viewBox="0 0 24 24" fill="none" stroke="#8a8a8a" stroke-width="2"><path d="M21 12V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-3"/><path d="M16 12h5v4h-5z"/></svg>
+
    easypaisa Account
+
    </div>
+
    </div>
+
    <div class="info-group">
+
    <div class="info-label">Sent to</div>
+
    <div class="info-value">Mahnoor</div>
+
    <div class="info-value">03139196058</div>
+
    </div>
+
    <div class="info-group">
+
    <div class="info-label">Account Details</div>
+
    <div class="info-value">Mahnoor</div>
+
    </div>
+
    <div class="info-group">
+
    <div class="info-label">Sent by</div>
+
    <div class="info-value">Ayesha Noor</div>
+
    <div class="info-value">03128976039</div>
+
    </div>
+
    <div class="info-group">
+
    <div class="info-label">Amount</div>
+
    <div class="info-value">12,000.00</div>
+
    </div>
+
    <div class="info-group">
+
    <div class="info-label">Fee / Charge</div>
+
    <div class="info-value">No Charge</div>
+
    </div>
+
    <div class="info-group">
+
    <div class="total-label">Total Amount</div>
+
    <div class="total-value">Rs. 12,000.00</div>
+
    </div>
+
    </div>
+
    <div class="footer-section">
+
    <div class="footer-item">Share</div>
+
    <div class="footer-item">Save to Gallery</div>
+
    <div class="footer-item pdf-item">
+
    <svg class="pdf-icon" viewBox="0 0 24 24" fill="none" stroke="#999999" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+
    <span>Save as PDF</span>
+
    </div>
+
    </div>
+
    </div>
+
    </body>
+
 </html>
